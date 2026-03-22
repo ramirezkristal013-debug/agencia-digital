@@ -1,0 +1,120 @@
+/* --- CONFIGURACIÓN GENERAL (PALETA DE COLORES) --- */
+:root {
+    --midnight-blue: #001f3f; /* Professional Midnight Blue */
+    --energy-orange: #ff6600; /* Dynamic Energy Orange */
+    --mint-green: #98ff98;    /* Soft Mint Green */
+    --pearl-gray: #e0e0e0;    /* Clean Pearl Gray */
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Tipografía limpia y moderna */
+    background-color: var(--pearl-gray);
+    color: var(--midnight-blue);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- ESTILO DE LA CABECERA (HEADER/HERO) --- */
+.main-header {
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    position: relative;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* IMAGEN DE FONDO (Integración de la foto fotorrealista) */
+    /* USAMOS UNA IMAGEN DE MARCADOR DE POSICIÓN CON TU DESCRIPCIÓN */
+    background-image: url('https://image.pollinations.ai/prompt/A_high-resolution%2C_photorealistic_image_depicting_the_home_page_header_of_a_modern_digital_branding_agency_specializing_in_%27Employer_Branding%27._The_scene_should_be_a_vibrant%2C_collaborative_open-plan_office%2C_bathed_in_soft%2C_natural_light%2C_showing_diverse%2C_happy_employees_interacting_genuinely_(no_cheesy_poses)._The_style_is_documentary-style_photography_with_a_shallow_depth_of_field%2C_focusing_on_a_team_discussing_project_ideas_around_a_large_screen_displaying_internal_culture_content%2C_with_motion_blur_to_suggest_energy_and_dynamism._The_primary_colors_are_a_professional%2C_deep_midnight_blue%2C_dynamic_energy_orange%2C_soft_mint_green%2C_and_clean_pearl_gray._The_overall_vibe_is_one_of_innovation%2C_authenticity%2C_and_human_connection%2C_shifting_the_focus_from_corporate_rigidity_to_a_thriving_community.');
+    
+    /* --- DESCOMENTA ESTA LÍNEA Y BORRA LA DE ARRIBA CUANDO TENGAS TU PROPIA IMAGEN LOCAL --- */
+    /* background-image: url('hero-office.jpg'); */
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto Parallax suave al hacer scroll */
+}
+
+/* Capa oscura para legibilidad */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 31, 63, 0.6); /* Transparencia de Midnight Blue */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Pone el texto sobre la capa oscura */
+    max-width: 800px;
+}
+
+/* TÍTULO PRINCIPAL */
+.main-header h1 {
+    font-size: 3.5rem; /* Grande, limpio y moderno */
+    font-weight: 700;
+    text-transform: uppercase; /* Opcional, para más impacto corporativo */
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+/* SUBTÍTULO */
+.main-header p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: var(--pearl-gray);
+}
+
+/* BOTÓN CALL-TO-ACTION (CTA) */
+.cta-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: var(--energy-orange);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px; /* Bordes redondeados modernos */
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; /* Suavidad en la animación */
+    border: 2px solid var(--energy-orange);
+}
+
+/* Efecto al pasar el ratón por encima (Hover) */
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--energy-orange);
+    transform: translateY(-3px); /* Pequeña elevación */
+    box-shadow: 0 10px 20px rgba(255, 102, 0, 0.3);
+}
+
+/* --- RESPONSIVIDAD (ADAPTACIÓN A MÓVILES) --- */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.2rem;
+    }
+    .main-header p {
+        font-size: 1rem;
+    }
+    .main-header {
+        background-attachment: scroll; /* Desactivar parallax en móvil */
+    }
+}

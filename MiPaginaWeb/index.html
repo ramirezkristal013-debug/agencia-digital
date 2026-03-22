@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentMagnet | Agencia de Marca Empleadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Esto hace que la navegación sea fluida y no de golpe */
+        html {
+            scroll-behavior: smooth;
+        }
+        body { font-family: 'Poppins', sans-serif; }
+        .bg-midnight { background-color: #1A2238; }
+        .text-orange-vibrant { color: #FF6B35; }
+        .bg-orange-vibrant { background-color: #FF6B35; }
+        .video-placeholder { background: linear-gradient(45deg, #1A2238, #2a3a5a); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-midnight">Talent<span class="text-orange-vibrant">Magnet</span></div>
+            
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-orange-vibrant transition">Inicio</a>
+                <a href="#servicios" class="hover:text-orange-vibrant transition">Servicios</a>
+                <a href="#testimonios" class="hover:text-orange-vibrant transition">Casos de Éxito</a>
+                <a href="#contacto" class="hover:text-orange-vibrant transition">Contacto</a>
+            </div>
+
+            <a href="#contacto" class="bg-orange-vibrant text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition">
+                Auditoría Gratis
+            </a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="bg-midnight text-white py-24 px-4 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Convierte tu oficina en el lugar donde <span class="text-orange-vibrant">todos quieren estar</span>.</h1>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Diseñamos estrategias digitales para que el mejor talento sueñe con trabajar en tu empresa.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#contacto" class="bg-orange-vibrant px-8 py-4 rounded-lg font-bold hover:scale-105 transition shadow-lg">Empezar ahora</a>
+                <a href="#servicios" class="border border-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-midnight transition">Ver Servicios</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold">Nuestros Pilares</h2>
+            <div class="h-1 w-20 bg-orange-vibrant mx-auto mt-4"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-10 text-center">
+            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">Culture Hubs</h3>
+                <p class="text-gray-600">Creamos páginas de "Trabaja con nosotros" que realmente emocionan.</p>
+            </div>
+            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition">
+                <div class="text-4xl mb-4">⭐</div>
+                <h3 class="text-xl font-bold mb-2">Reputation Lab</h3>
+                <p class="text-gray-600">Gestionamos tus reseñas en Glassdoor y LinkedIn estratégicamente.</p>
+            </div>
+            <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition">
+                <div class="text-4xl mb-4">🎬</div>
+                <h3 class="text-xl font-bold mb-2">Employee Stories</h3>
+                <p class="text-gray-600">Producimos videos donde tus empleados cuentan por qué aman su trabajo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20 px-4 border-y border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Mira cómo transformamos la cultura de TechCorp</h2>
+            <div class="video-placeholder aspect-video rounded-3xl flex items-center justify-center relative shadow-2xl group cursor-pointer">
+                <div class="z-10 bg-white/10 p-6 rounded-full backdrop-blur-md group-hover:scale-110 transition">
+                    <span class="text-white text-4xl">▶</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Resultados Reales</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md flex gap-4 italic border-l-8 border-orange-vibrant">
+                    <span class="text-5xl text-gray-200">"</span>
+                    <p class="text-lg">"Gracias a TalentMagnet, nuestra tasa de aceptación de ofertas subió un 35%. El talento ya nos conoce antes de la primera entrevista." <br><br><strong>- Roberto Sánchez, CEO de FintechX</strong></p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md flex gap-4 italic border-l-8 border-midnight">
+                    <span class="text-5xl text-gray-200">"</span>
+                    <p class="text-lg">"Limpiamos nuestra reputación en portales de empleo y ahora atraemos perfiles senior que antes nos ignoraban." <br><br><strong>- Lucía Torres, Directora de Talento</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-midnight text-white px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Listo para ser un imán de talento?</h2>
+            <p class="mb-10 text-gray-400">Déjanos tus datos y realizaremos una auditoría gratuita de tu marca empleadora actual.</p>
+            
+            <form class="space-y-4">
+                <input type="text" placeholder="Nombre de tu empresa" class="w-full p-4 rounded-lg bg-white/10 border border-white/20 focus:border-orange-vibrant outline-none transition">
+                <input type="email" placeholder="Correo corporativo" class="w-full p-4 rounded-lg bg-white/10 border border-white/20 focus:border-orange-vibrant outline-none transition">
+                <textarea placeholder="¿Cuál es tu principal reto hoy?" rows="4" class="w-full p-4 rounded-lg bg-white/10 border border-white/20 focus:border-orange-vibrant outline-none transition"></textarea>
+                <button type="submit" class="w-full bg-orange-vibrant py-4 rounded-lg font-bold text-xl hover:bg-orange-600 transition">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-black text-gray-500 text-center text-sm border-t border-gray-900">
+        <p>© 2026 TalentMagnet Digital Branding Agency. Hecho para atraer a los mejores.</p>
+    </footer>
+
+</body>
+</html>
